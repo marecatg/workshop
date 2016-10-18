@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!-- BASEN ON DRIBBBLE SHOT: https://dribbble.com/shots/2209627-UI8-Nav -->
 <html>
 
 <head>
@@ -37,24 +17,66 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="css/accueil.css" />
+    <title>Accueil</title>
 </head>
-
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+<!-- BASEN ON DRIBBBLE SHOT: https://dribbble.com/shots/2209627-UI8-Nav -->
+
+<div class="container">
+  <span class="menu-trigger">
+    <i class="menu-trigger-bar top"></i>
+    <i class="menu-trigger-bar middle"></i>
+    <i class="menu-trigger-bar bottom"></i>
+  </span>
+  <span class="close-trigger">
+    <i class="close-trigger-bar left"></i>
+    <i class="close-trigger-bar right"></i>
+  </span>
+  <span class="logo">
+    <span>
+      ⬢
+      <i class="logo-title">UI</i>
+      <i class="logo-badge">6</i>
+    </span>
+  </span>
+    <div class="inner-container">
+        <i class="menu-bg top"></i>
+        <i class="menu-bg middle"></i>
+        <i class="menu-bg bottom"></i>
+        <div class="menu-container">
+            <ul class="menu">
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">Create account</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
+<!-- -->
+<div id='links'>
+    <a id='twitter' href="https://twitter.com/karlovidek" target="_blank"><span class='fa fa-twitter'></span></a>
+    <div id='pens'><a href="https://codepen.io/karlovidek/" target="_blank"><span class='fa fa-codepen'></span></a> my other Pens</div>
+</div>
+<!-- -->
+    <script src='https://assets.codepen.io/assets/common/stopExecutionOnTimeout-53beeb1a007ec32040abaf4c9385ebfc.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js'></script>
+    <script type="text/javascript" src="js/accueil.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
-</body>
-
+  </body>
 </html>
