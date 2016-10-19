@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Oleose App Landing Page | Bootstrap Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="css/freeze-default.css">
+    <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
+    <script src="js/verif-formulaire.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+	<section id="support" class="doublediagonal">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3 titre-perso">
+                    <h3>Informations obligatoires</h3>
+                    <div class="divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                <form action="/compte-u.html" role="form">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email" onblur="verifMail(this)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Mot de passe" onblur="verifMdp(this)">
+                                    </div>
+                                    <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Informations générales</h3>
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="form-error" type="text" class="form-control" placeholder="Prénom">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Téléphone" onblur="verifNumber(this)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Pays">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Code Postal" onblur="verifNumber(this)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Ville">
+                                    </div>
+                                    <div class="form-group">
+                                         <textarea cols="30" rows="1" class="form-control" placeholder="Adresse"></textarea>
+                                    </div>
+                                    <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Informations professionnelles</h3>
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Secteur d'activité">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Profession actuelle">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Entreprise actuelle">
+                                    </div>
+                                    <div class="btn-form">
+                                        <button type="submit" class="btn btn-primary btn-lg">Valider</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/placeholdem.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+</body>
+</html>

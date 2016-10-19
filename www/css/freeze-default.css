@@ -1104,7 +1104,7 @@ form .form-control:focus {
 
 /* CSS PERSO */
 .titre-perso{
-  margin-top: 40px !important;
+  margin-top: 60px !important;
   margin-bottom: 10px !important;
 }
  .soustitre-perso{
@@ -1139,4 +1139,8 @@ form .form-control:focus {
 
  .menu-inscription{
   padding: 0px !important;
+ }
+
+ .form-info-1{
+  disabled: true;
  }
