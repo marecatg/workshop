@@ -69,6 +69,29 @@
 
 
     </header>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+   var stage = [];
+   $.ajax({
+     type:           "GET",
+     url: "http://workshop.gaetan-marecat.fr/api/stages/1",
+     dataType: 'json'
+   }).success(function(data) {
+     $('#infostage').append(data.mission);
+     $('#infodate').append(data.date_debut);
+     $('#infoduree').append(data.duree);
+   }).error(function(err){
+     console.log(err);
+   });
+
+});
+</script>
+</head>
+
+<body>
 	<section id="support" class="doublediagonal">
             <div class="container">
                 <div class="section-heading scrollpoint sp-effect3 titre-perso">
@@ -82,10 +105,10 @@
                                         <h3>Description :</h3>
                                         <div class="divider"></div>
                                       </div>
-                                        <p> Ceci est une info du stage. Ce stage va etre cool. Prend ce stage ! </p>
+                                        <p id="infostage"></p>
                                         <h4> Date et durée : </h4>
-                                        <p> 27/09/16 </p>
-                                        <p> 4 semaines </p>
+                                        <p id="infodate"></p>
+                                        <p id="infoduree"></p>
                                         <h4> Localisation : </h4>
                                         <p> Adresse de l'entrepirse 3090 Montpellier </p>
                                     </div>
@@ -121,7 +144,7 @@
     <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/waypoints.min.js"></script>
-    <script src="js/script-menu-fix.js"></script>
+    <script src="js/scripts.js"></script>
     <script>
         $(document).ready(function() {
             appMaster.preLoader();
