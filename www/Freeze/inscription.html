@@ -15,10 +15,8 @@
     <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
 
     <link rel="stylesheet" href="css/freeze-default.css">
-
-
     <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
-
+    <script src="js/verif-formulaire.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -67,8 +65,8 @@
     </header>
 	<section id="support" class="doublediagonal">
             <div class="container">
-                <div class="section-heading scrollpoint sp-effect3">
-                    <h1>Informations générales</h1>
+                <div class="section-heading scrollpoint sp-effect3 titre-perso">
+                    <h1>Inscription</h1>
                     <div class="divider"></div>
                 </div>
                 <div class="row">
@@ -77,28 +75,39 @@
                             <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
                                 <form role="form">
                                     <div class="form-group">
-                                        <input id="form-error" type="text" class="form-control" placeholder="Nom">
+                                        <input type="email" class="form-control" placeholder="Email" onblur="verifMail(this)">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Mot de passe" onblur="verifMdp(this)">
+                                    </div>
+                                    <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Informations générales</h3>
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nom">
                                     </div>
                                     <div class="form-group">
                                         <input id="form-error" type="text" class="form-control" placeholder="Prénom">
                                     </div>
                                     <div class="form-group">
-                                        <input id="form-error" type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input id="form-error" type="number" class="form-control" placeholder="Téléphone">
+                                        <input type="text" class="form-control" placeholder="Téléphone" onblur="verifNumber(this)">
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Pays">
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" class="form-control" placeholder="Code Postal">
+                                        <input type="text" class="form-control" placeholder="Code Postal" onblur="verifNumber(this)">
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Ville">
                                     </div>
                                     <div class="form-group">
                                          <textarea cols="30" rows="1" class="form-control" placeholder="Adresse"></textarea>
+                                    </div>
+                                    <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Informations professionnelles</h3>
+                                        <div class="divider"></div>
                                     </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Secteur d'activité">
@@ -109,36 +118,10 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Entreprise actuelle">
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                    <div class="btn-form">
+                                        <button type="submit" class="btn btn-primary btn-lg">Valider</button>
+                                    </div>
                                 </form>
-                            </div>
-                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
-                                <div class="media">
-                                    <a class="pull-left" href="#" >
-                                        <i class="fa fa-map-marker fa-2x"></i>
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">4, Some street, California, USA</h4>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a class="pull-left" href="#" >
-                                        <i class="fa fa-envelope fa-2x"></i>
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">
-                                            <a href="mailto:support@oleose.com">support@oleose.com</a>
-                                        </h4>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <a class="pull-left" href="#" >
-                                        <i class="fa fa-phone fa-2x"></i>
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">+1 234 567890</h4>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -153,7 +136,6 @@
     <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
-
     <script>
         $(document).ready(function() {
             appMaster.preLoader();

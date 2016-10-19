@@ -46,11 +46,12 @@ header .navbar-default {
   border: none;
   padding-top: 40px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  visibility: hidden;
 }
 header .navbar-default ul.navbar-nav {
   padding-top: 55px;
@@ -122,11 +123,12 @@ header .navbar-default.scrolled {
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   padding: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  visibility: visible;
 }
 header .navbar-default.scrolled .navbar-brand {
   padding: 15px 20px;
@@ -600,10 +602,9 @@ form .form-control {
   border-radius: 5em;
   height: 40px;
   line-height: 40px;
-  padding: 20px;
   color: #cfcfcf;
   border: 2px solid #cccccc;
-  font-weight: 300;
+  /*font-weight: 300;*/
 }
 form textarea.form-control {
   -webkit-border-radius: 20px;
@@ -615,16 +616,9 @@ form textarea.form-control {
   line-height: normal;
 }
 @media screen and (max-width: 640px) {
-  header .navbar-default.scrolled .navbar-brand img .logo{
-    width: 100px;
-    height: auto;
-    display: block;
-  }
-
   .logo {
     width: 100px;
     height: auto;
-    display: none;
   }
   .slick-next {
     right: 0;
@@ -1111,3 +1105,16 @@ form .form-control:focus {
 .pre-loader {
   background: #336799;
 }
+
+/* CSS PERSO */
+.titre-perso{
+  margin-top: 40px !important;
+  margin-bottom: 10px !important;
+}
+ .soustitre-perso{
+  margin-bottom: 10px !important;
+  margin-top: : 30px !important;
+ }
+ .btn-form{
+  text-align: center;
+ }
