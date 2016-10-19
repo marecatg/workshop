@@ -1118,3 +1118,15 @@ form .form-control:focus {
  .btn-form{
   text-align: center;
  }
+ .btn-linkedin{
+  width: 215px;
+  height: 41px;
+  background:url(/Freeze/img/linkedin/Sign-in-Large---Default.png) no-repeat;
+  display: block;
+ }
+ .btn-linkedin:hover{
+  background:url(/Freeze/img/linkedin/Sign-in-Large---Hover.png) no-repeat;
+ }
+ .btn-linkedin:active{
+  background:url(/Freeze/img/linkedin/Sign-in-Large---Active.png) no-repeat;
+ }
