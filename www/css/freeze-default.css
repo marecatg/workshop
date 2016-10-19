@@ -46,12 +46,8 @@ header .navbar-default {
   border: none;
   padding-top: 40px;
   padding-bottom: 20px;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  visibility: hidden;
+  background: #336799;
+  border-bottom: 3px solid #336799;
 }
 header .navbar-default ul.navbar-nav {
   padding-top: 55px;
@@ -1121,12 +1117,26 @@ form .form-control:focus {
  .btn-linkedin{
   width: 215px;
   height: 41px;
-  background:url(/Freeze/img/linkedin/Sign-in-Large---Default.png) no-repeat;
+  background:url(/img/linkedin/Sign-in-Large---Default.png) no-repeat;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
  }
  .btn-linkedin:hover{
-  background:url(/Freeze/img/linkedin/Sign-in-Large---Hover.png) no-repeat;
+  background:url(/img/linkedin/Sign-in-Large---Hover.png) no-repeat;
  }
  .btn-linkedin:active{
-  background:url(/Freeze/img/linkedin/Sign-in-Large---Active.png) no-repeat;
+  background:url(/img/linkedin/Sign-in-Large---Active.png) no-repeat;
+ }
+ .btn-inscription{
+  margin-top: 40px;
+ }
+ .menu-gestion-profil{
+  vertical-align: middle;
+  min-height: 100%;
+ }
+
+ .menu-inscription{
+  padding: 0px !important;
  }
