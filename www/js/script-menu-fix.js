@@ -144,8 +144,6 @@ $(document).ready(function() {
 
     appMaster.revSlider();
 
-    appMaster.scrollMenu();
-
     appMaster.placeHold();
 
 });
