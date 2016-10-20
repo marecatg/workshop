@@ -1121,7 +1121,6 @@ form .form-control:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
  }
  .btn-linkedin:hover{
   background:url(/img/linkedin/Sign-in-Large---Hover.png) no-repeat;
@@ -1136,11 +1135,27 @@ form .form-control:focus {
   vertical-align: middle;
   min-height: 100%;
  }
-
- .menu-inscription{
-  padding: 0px !important;
+ #btn-valide-1, #btn-valide-2, #btn-valide-3, #btn-valide-4, #btn-valide-5{
+  display: none;
+  width: 100%;
+ }
+ #btn-modif-1, #btn-modif-2, #btn-modif-3, #btn-modif-4, #btn-modif-5{
+  display: block;
+ }
+ #exp2, #for2{
+  display: none;
+ }
+ #btn-ajout-4, #btn-ajout-5{
+  width: 100%;
  }
 
- .form-info-1{
-  disabled: true;
+ .btn-perso{
+  margin-top: 15px;
  }
+ /*.menu-inscription{
+  padding-left: 6px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: 20px;
+ }*/

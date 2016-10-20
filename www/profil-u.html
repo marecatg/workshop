@@ -76,61 +76,280 @@
                         <div class="row">
                             <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
                                 <form role="form">
-                                    <h3>Informations obligatoires</h3>
                                     <div class="form-group">
                                         <input type="email" class="form-control form-info-1" placeholder="Email" disabled="true" onblur="verifMail(this)">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control form-info-1" placeholder="Mot de passe" disabled="true" onblur="verifMdp(this)">
                                     </div>
-                                    <div class="btn-form">
-                                        <div class="btn btn-lg btn-primary " onClick="modifForm1()">
+                                    <div class="btn-form form-group">
+                                        <div id="btn-modif-1" class="btn btn-lg btn-primary " onClick="modifForm1()">
                                             <i class="fa fa-pencil fa-2x"></i>
                                             Modifier
                                         </div>
+                                        <div id="btn-valide-1" onClick="validForm1()">
+                                            <button type="submit" class="btn btn-primary btn-lg">
+                                                <i class="fa fa-check fa-2x"></i>
+                                                Valider
+                                            </button>
+                                        </div>
                                     </div>
                                 </form>
+                                    <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
                                         <h3>Informations générales</h3>
                                         <div class="divider"></div>
                                     </div>
+                                <form role="form">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nom">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Nom">
                                     </div>
                                     <div class="form-group">
-                                        <input id="form-error" type="text" class="form-control" placeholder="Prénom">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Prénom">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Téléphone" onblur="verifNumber(this)">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Téléphone" onblur="verifNumber(this)">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Pays">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Pays">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Code Postal" onblur="verifNumber(this)">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Code Postal" onblur="verifNumber(this)">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Ville">
+                                        <input type="text" class="form-control form-info-2" disabled="true" placeholder="Ville">
                                     </div>
                                     <div class="form-group">
-                                         <textarea cols="30" rows="1" class="form-control" placeholder="Adresse"></textarea>
+                                         <textarea cols="30" rows="1" class="form-control form-info-2" disabled="true" placeholder="Adresse"></textarea>
                                     </div>
+                                    <div class="form-group">
+                                         <textarea cols="30" rows="2" class="form-control form-info-2" disabled="true" placeholder="Résumé vous décrivant"></textarea>
+                                    </div>
+                                    <div class="btn-form form-group">
+                                        <div id="btn-modif-2" class="btn btn-lg btn-primary " onClick="modifForm2()">
+                                            <i class="fa fa-pencil fa-2x"></i>
+                                            Modifier
+                                        </div>
+                                        <div id="btn-valide-2" onClick="validForm2()">
+                                            <button type="submit" class="btn btn-primary btn-lg">
+                                                <i class="fa fa-check fa-2x"></i>
+                                                Valider
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                                     <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
                                         <h3>Informations professionnelles</h3>
                                         <div class="divider"></div>
                                     </div>
+                                <form role="form">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Secteur d'activité">
+                                        <input type="text" class="form-control form-info-3" disabled="true" placeholder="Secteur d'activité">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Profession actuelle">
+                                        <input type="text" class="form-control form-info-3" disabled="true" placeholder="Profession actuelle">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Entreprise actuelle">
+                                        <input type="text" class="form-control form-info-3" disabled="true" placeholder="Entreprise actuelle">
                                     </div>
-                                    <div class="btn-form">
-                                        <button type="submit" class="btn btn-primary btn-lg">Valider</button>
+                                    <div class="btn-form form-group">
+                                        <div id="btn-modif-3" class="btn btn-lg btn-primary " onClick="modifForm3()">
+                                            <i class="fa fa-pencil fa-2x"></i>
+                                            Modifier
+                                        </div>
+                                        <div id="btn-valide-3" onClick="validForm3()">
+                                            <button type="submit" class="btn btn-primary btn-lg">
+                                                <i class="fa fa-check fa-2x"></i>
+                                                Valider
+                                            </button>
+                                        </div>
                                     </div>
                                 </form>
+                                <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Expérience</h3>
+                                        <div class="divider"></div>
+                                    </div>
+                                <div id="exp1">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" disabled="true" placeholder="Nom de l'entreprise">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" disabled="true" placeholder="Titre du poste">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" disabled="true" placeholder="Lieu">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de début</label>
+                                            <input type="date" class="form-control form-info-4" disabled="true">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de fin</label>
+                                            <input type="date" class="form-control form-info-4" disabled="true">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Ceci est votre job actuel</label>
+                                            <input type="checkbox" class="form-control form-info-4" disabled="true" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="2" class="form-control form-info-4" disabled="true" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="btn-form form-group">
+                                            <div id="btn-modif-4" class="btn btn-lg btn-primary " onClick="modifForm4()">
+                                                <i class="fa fa-pencil fa-2x"></i>
+                                                Modifier
+                                            </div>
+                                            <div id="btn-valide-4" onClick="validForm4()">
+                                                <button type="submit" class="btn btn-primary btn-lg">
+                                                    <i class="fa fa-check fa-2x"></i>
+                                                    Valider
+                                                </button>
+                                            </div>
+                                            <div id="btn-ajout-4" class="btn btn-lg btn-primary btn-perso" onClick="newExp()">
+                                                <i class="fa fa-plus fa-2x"></i>
+                                                Ajouter
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                                
+                                <div id="exp2">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" placeholder="Nom de l'entreprise">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" placeholder="Titre du poste">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-4" placeholder="Lieu">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de début</label>
+                                            <input type="date" class="form-control form-info-4">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de fin</label>
+                                            <input type="date" class="form-control form-info-4">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Ceci est votre job actuel</label>
+                                            <input type="checkbox" class="form-control form-info-4" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="2" class="form-control form-info-4" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="btn-form form-group">
+                                            <div id="btn-valide-exp" onClick="validForm4()">
+                                                <button type="submit" class="btn btn-primary btn-lg">
+                                                    <i class="fa fa-check fa-2x"></i>
+                                                    Valider
+                                                </button>
+                                            </div>
+                                            <div class="btn btn-lg btn-primary btn-perso" onClick="newExp2()">
+                                                <i class="fa fa-times fa-2x"></i>
+                                                Annuler
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                        
+
+                            <div class="section-heading scrollpoint sp-effect3 soustitre-perso">
+                                        <h3>Formation</h3>
+                                        <div class="divider"></div>
+                                    </div>
+                                <div id="for1">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5" disabled="true" placeholder="Nom de l'école">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de début</label>
+                                            <input type="date" class="form-control form-info-5" disabled="true">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de fin</label>
+                                            <input type="date" class="form-control form-info-5" disabled="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5" disabled="true" placeholder="Diplôme">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5" disabled="true" placeholder="Discipline">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5" disabled="true" placeholder="Résultat obtenu">
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="2" class="form-control form-info-5" disabled="true" placeholder="Activités et associations"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="3" class="form-control form-info-5" disabled="true" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="btn-form form-group">
+                                            <div id="btn-modif-5" class="btn btn-lg btn-primary " onClick="modifForm5()">
+                                                <i class="fa fa-pencil fa-2x"></i>
+                                                Modifier
+                                            </div>
+                                            <div id="btn-valide-5" onClick="validForm5()">
+                                                <button type="submit" class="btn btn-primary btn-lg">
+                                                    <i class="fa fa-check fa-2x"></i>
+                                                    Valider
+                                                </button>
+                                            </div>
+                                            <div id="btn-ajout-5" class="btn btn-lg btn-primary btn-perso" onClick="newFor()">
+                                                <i class="fa fa-plus fa-2x"></i>
+                                                Ajouter
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                                
+                                <div id="for2">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5" placeholder="Nom de l'école">
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de début</label>
+                                            <input type="date" class="form-control form-info-5" >
+                                        </div>
+                                        <div class="form-group btn-form">
+                                            <label>Date de fin</label>
+                                            <input type="date" class="form-control form-info-5" >
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5"  placeholder="Diplôme">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5"  placeholder="Discipline">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-info-5"  placeholder="Résultat obtenu">
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="2" class="form-control form-info-5"  placeholder="Activités et associations"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                             <textarea cols="30" rows="3" class="form-control form-info-5"  placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="btn-form form-group">
+                                            <div id="btn-valide-for" onClick="validForm5()">
+                                                <button type="submit" class="btn btn-primary btn-lg">
+                                                    <i class="fa fa-check fa-2x"></i>
+                                                    Valider
+                                                </button>
+                                            </div>
+                                            <div class="btn btn-lg btn-primary btn-perso" onClick="newFor2()">
+                                                <i class="fa fa-times fa-2x"></i>
+                                                Annuler
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
