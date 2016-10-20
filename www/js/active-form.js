@@ -22,7 +22,7 @@ function validForm1(){
 
 function modifForm2(){
 	var element = document.getElementsByClassName("form-info-2");
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < 8; i++) {
     	element[i].removeAttribute("disabled");
 	}
 	var btnModif = document.getElementById("btn-modif-2");

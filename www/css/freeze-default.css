@@ -1117,16 +1117,16 @@ form .form-control:focus {
  .btn-linkedin{
   width: 215px;
   height: 41px;
-  background:url(/img/linkedin/Sign-in-Large---Default.png) no-repeat;
+  background:url(http://workshop.gaetan-marecat.fr/Sign-in-Large---Default.png) no-repeat;
   display: block;
   margin-left: auto;
   margin-right: auto;
  }
  .btn-linkedin:hover{
-  background:url(/img/linkedin/Sign-in-Large---Hover.png) no-repeat;
+  background:url(http://workshop.gaetan-marecat.fr/Sign-in-Large---Hover.png) no-repeat;
  }
  .btn-linkedin:active{
-  background:url(/img/linkedin/Sign-in-Large---Active.png) no-repeat;
+  background:url(http://workshop.gaetan-marecat.fr/Sign-in-Large---Active.png) no-repeat;
  }
  .btn-inscription{
   margin-top: 40px;
