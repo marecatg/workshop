@@ -74,14 +74,24 @@
 <script>
 
     $(function() {
+        var monthNames = [
+  "January", "February", "March",
+  "April", "May", "June", "July",
+  "August", "September", "October",
+  "November", "December"
+];
    var stage = [];
    $.ajax({
-     type:           "GET",
+     type: "GET",
      url: "http://workshop.gaetan-marecat.fr/api/stages/1",
      dataType: 'json'
    }).success(function(data) {
      $('#infostage').append(data.mission);
-     $('#infodate').append(data.date_debut);
+     var date = new Date(data.date_debut);
+     var day = date.getDate();
+        var monthIndex = date.getMonth();
+        var year = date.getFullYear();
+     $('#infodate').append(day + ' ' + monthNames[monthIndex] + ' ' + year);
      $('#infoduree').append(data.duree);
    }).error(function(err){
      console.log(err);
